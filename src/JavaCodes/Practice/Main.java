@@ -1,7 +1,6 @@
 package JavaCodes.Practice;
 
 import java.util.*;
-import java.util.concurrent.ConcurrentMap;
 
 public class Main {
     public static void main(String[] args) {
@@ -36,10 +35,10 @@ public class Main {
         pq.offer(1);
         System.out.println(pq);
 
-        List<Book> bookPq = new ArrayList<>();
-        bookPq.add(new Book("book1", 1));
-        bookPq.add(new Book("book2", 2));
-        bookPq.add(new Book("book3", 3));
+        List<Bookkk> bookPq = new ArrayList<>();
+        bookPq.add(new Bookkk("book1", 1));
+        bookPq.add(new Bookkk("book2", 2));
+        bookPq.add(new Bookkk("book3", 3));
 
         System.out.println(bookPq);
         Collections.sort(bookPq , Collections.reverseOrder());
@@ -47,11 +46,11 @@ public class Main {
     }
 
 }
-class Book implements Comparable<Book> {
+class Bookkk implements Comparable<Bookkk> {
     private String name;
     private int price;
 
-    public Book(String name, int price) {
+    public Bookkk(String name, int price) {
         this.name = name;
         this.price = price;
     }
@@ -74,14 +73,14 @@ class Book implements Comparable<Book> {
 
     @Override
     public String toString() {
-        return "Book{" +
+        return "Bookkk{" +
                 "name='" + name + '\'' +
                 ", price=" + price +
                 '}';
     }
 
     @Override
-    public int compareTo(Book o) {
+    public int compareTo(Bookkk o) {
         return this.getPrice() - o.getPrice();
     }
 }

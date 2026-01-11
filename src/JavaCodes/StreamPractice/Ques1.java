@@ -8,6 +8,9 @@ import java.util.stream.Collectors;
 
 public class Ques1 {
     public static void main(String[] args) {
+
+        // 1. Find the Sum of All Elements in a List
+
         List<Integer> list = List.of(1, 2, 3, 4, 5);
         System.out.println(list.stream().reduce(Integer::sum).get());
 

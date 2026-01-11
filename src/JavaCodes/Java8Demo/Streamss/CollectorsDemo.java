@@ -4,6 +4,7 @@ import java.lang.reflect.Array;
 import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 public class CollectorsDemo {
     public static void main(String[] args) {
@@ -117,6 +118,12 @@ public class CollectorsDemo {
 
 
         // Example 2. Counting Word Occurence
+
+
+
+
+
+
 
 
     }
